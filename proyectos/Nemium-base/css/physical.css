@@ -252,8 +252,24 @@ header nav ul li a:hover{
 ::-webkit-scrollbar {
   display: none;
 }
-.form {
+/* quedo artreglando el formulariio */
+.form input{
+  inline-size: 280px;
+  block-size: 48px;
+  display: inline-block;
+  border-radius: 90px;
+  padding:12px 16px;
+  box-sizing: border-box;
+}
+input[type="submit"]{
+  inline-size: 119px;
+  block-size: 48px;
+  position: absolute;
+  left: 514px;
   
+}
+.section-form{
+  position: relative;
 }
 @media screen and (min-width:1366px){
   h1{
