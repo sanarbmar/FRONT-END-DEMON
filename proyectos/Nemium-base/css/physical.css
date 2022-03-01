@@ -252,6 +252,9 @@ header nav ul li a:hover{
 ::-webkit-scrollbar {
   display: none;
 }
+.form {
+  
+}
 @media screen and (min-width:1366px){
   h1{
     font-size: 60px;
