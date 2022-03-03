@@ -73,7 +73,7 @@ h1{
   color: var(--white30);
   margin-block-start: 20px;
   margin-block-end: 16px;
-  /* font-weight: normal; */
+  font-weight: normal;
 }
 h2{
   font-size: 2em;
@@ -81,7 +81,7 @@ h2{
   color: var(--white30);
   /* margin: 64px 0 40px; */
   margin-block: 40px;
-  /* font-weight: normal; */
+  font-weight: normal;
 }
 h3{
   position: sticky;
@@ -135,7 +135,7 @@ nav details summary{
 }
 .section-content{
   counter-reset: titleList;
-  margin-top: 164px;
+  /* margin-top: 164px; */
 }
 .section-content img{
   margin-block-start: 40px;
@@ -175,7 +175,7 @@ nav details summary{
   line-height: 24px;
 } */
 .main{
-  
+  margin-block-end: 80px;
  /*  border: 4px solid red; */
  /* background: purple; */
 }
@@ -197,11 +197,23 @@ hr{
   margin-block: 40px;
   border-color:  rgba(97, 97, 97, 0.2);;
 }
-.main hr{
+/* .main hr{
   display: none;
+} */
+.modcaja{
+  margin-block-start: 122.87px;
+}
+.mail-parraf{
+  margin-block-start: 51px;
+  margin-block-end: 40px;
 }
 .section-content img{
   margin-top: 40px;
+}
+.section-content .form h2{
+  /* border: 2px solid red; */
+  margin-block-start: 0;
+  margin-block-end: 16px;
 }
 blockquote{
   margin-block-start: 80px;
@@ -212,7 +224,7 @@ blockquote{
   padding-inline-start: 24px;
   padding-block-start: 24px;
   padding-block-end: 24px;
-  font-size: 24px;
+  font-size: 17px;
   inline-size: 100%;
   /* inline-size: 100%; */
  /*  border-left: 4px solid var(--white30); */
@@ -303,11 +315,42 @@ header nav ul li a:hover{
 .form input[type="submit"]{
   background: #157EFB;
   border: none;
+  margin-block-end: 0;
 }
 .div-menu-dos{
   display: none;
 }
-
+footer{
+  text-align: center;
+  padding-block-start: 48px;
+  padding-block-end: 58px;
+  box-sizing: border-box;
+  background:#FFFFFF;
+  inline-size: 100%;
+  block-size: 174px;
+}
+.footer{
+  /* background:red; */
+ 
+}
+.footer-content{
+ /*  background: blue; */
+  /* inline-size: 367px;
+  block-size: 78px; */
+}
+footer p{
+  color: #251F24;
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin: 0 0 16px 0;
+}
+.footer-content img{
+  margin-inline-end: 16px;
+  margin-block-start: 16px;
+}
 @media screen and (min-width:1366px){
   h1{
     font-size: 60px;
@@ -347,6 +390,31 @@ header nav ul li a:hover{
   }
   .div-menu-dos{
     display: block;
+  }
+  blockquote{
+    font-size: 24px;
+  }
+  footer{
+    text-align: center;
+    padding-block-start: 48px;
+    box-sizing: border-box;
+    background:#FFFFFF;
+    inline-size: 100%;
+    block-size: 174px;
+  }
+ 
+  footer p{
+    color:#251F24;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43.65px;
+    margin: 0 0 16px 0;
+  }
+  .footer-content img{
+    margin-inline-end: 16px;
+    margin-block-start: 16px;
   }
   
 }
