@@ -17,7 +17,7 @@
     font-family:'Rubik', sans-serif;
   }
   .image-header{
-    background-image: url('../images/backgroung-C.png');
+    background: url('../images/backgroung-C.png');
     height: 96px;
     
   }
@@ -74,13 +74,22 @@
   }
   .div-menu-uno,.div-menu-dos{
     margin: 16px 16px 40px 16px;
+    box-sizing: border-box;
   }
   .div-menu-dos p{
     color: #000000;
   }
+ 
   .div-menu-dos details summary{
     color: #000000;
     font-weight: bold;
+  }
+  #colorgray{
+    color: rgba(0, 0, 0, 0.5);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
   }
   .div-menu-uno nav ul li:last-child{
     margin-bottom: 0;
@@ -95,7 +104,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
     color: #000000;
-    margin-block-start: 64px;
+    margin-block-start: 0;
     margin-block-end: 16px;
     font-weight: 700;
   }
@@ -118,11 +127,11 @@
     
   }
   p{
-    color: var(--gray30);
+   color:  #545454;
   }
   p span{
     font-weight: bold;
-    color: #424242;
+    color: #5551FF;
   }
   header nav a{
     text-decoration: none;
@@ -143,18 +152,13 @@
     color: var(--gray10);
     margin: 0;
   }
-  nav details summary{
-    font-weight: bold;
-    color: var(--gray10);
-    line-height: 24px;
-  }
   .section-content h3{
     counter-increment: titleList;
     padding-bottom: 8px;
   }
   .section-content{
     counter-reset: titleList;
-    margin-top: 164px;
+    margin-top: 40px;
     text-align: center;
   }
   .section-content:first-of-type{
@@ -214,6 +218,7 @@
   blockquote span{
     color: #000000;
     font-weight: 400;  
+
   }
   blockquote span::before{
     content: '-';
@@ -233,8 +238,24 @@
   .section-content p{
     margin-block-end: 40px;
   }
-  .alignstart{
+  .alignstart,.alignstart h3{
     text-align: start;
+  }
+  .alignstart h3::before{
+    display: none;
+  }
+  .alignstart ul,.alignstart ol{
+    padding:0 0 0 16px;
+  }
+  .alignstart ul li::marker{
+    color: #5551FF;
+  }
+  .nonumber::before{
+    display: none;
+  }
+  .nonumber{
+    margin-block-start: 40px;
+    margin-inline-end: 16px;
   }
   header nav ul li:hover{
     background: #000000;
@@ -280,11 +301,11 @@
     display: inline-block;
     inline-size: 15px;
     block-size: 15px;
-    background: rgba(66, 66, 66, 0.2);
+    background: rgba(142, 45, 226, 0.5);
     border-radius: 50%;
   }
   .slider-bullet:hover{
-    background: #424242;
+    background: #5551FF;;
   }
   ::-webkit-scrollbar {
     display: none;
@@ -313,22 +334,26 @@
   }
   .section-form{
     position: relative;
-    margin-block-start: 45px;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
   }
   .section-form .form h2{
-    margin-block: 0 16px;
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    margin-block-start:40px;
+    margin-block-end:16px;
+    font-family:'Rubik', sans-serif;
+    font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
-    color: #424242;
+    line-height: 28.44px;
+    color:  #000000;
   }
   .mail-parraf{
+    color: #545454;
     margin-block-start: 40px;
     text-align: start;
   }
-  /* quedo artreglando el footer */
+  .mail-parraf a{
+    color: #545454;
+  }
   footer{
     text-align: center;
     padding-block-start: 48px;
@@ -378,14 +403,20 @@
       font-size: 14px;
       color:var(--gray10);
       position: absolute;
-      right: -232px;
+      right: -208px;
       width: 208px;
       overflow-y: auto;
       z-index: 1;
       
      
     }
-    
+    #colorgray{
+      color: rgba(0, 0, 0, 0.5);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+    }
     header li,.section-content ul li,.section-content ol li{
       margin-bottom: 16px;
     }
@@ -401,21 +432,26 @@
     }
     .div-menu-dos{
       display: block;
+      width: 208px;
+      box-sizing: border-box;
     }
-   /*  QUEDO ARREGLANDO DETALLES DE NEMIUM D */
+    
+
     .wrapper{
       width: 903px;
       margin: auto;
     }
     .div-menu-uno{
       margin: 0 0 104px 0;
+      width: 208px;
     }
     header nav ul li{
-      width: 188px;
+      width: 208px;
       height: 40px;
       padding: 8px;
       box-sizing: border-box;
     }
+    
     h2{
       font-size: 2em;
       font-family: 'Rubik', sans-serif;
@@ -429,8 +465,8 @@
       background: white;
       font-size: 1.5em;
       color: #000000;
-      margin-top: 16px;
-      margin-bottom: 24px;
+      margin-top: 40px;
+      margin-bottom: 16px;
       font-family: 'Rubik', sans-serif;
       font-weight: 400;
       
@@ -469,15 +505,17 @@
     .section-form{
       position: relative;
       margin-block-start: 45px;
+      margin-block-end: 113px;
     }
     .section-form .form h2{
+      margin-block-start:40px;
+      margin-block-end:16px;
       margin-block: 0 16px;
-      font-family: 'Roboto',sans-serif;
-      font-style: normal;
-      font-weight: normal;
+      font-family:'Rubik', sans-serif;
+      font-weight: 400;
       font-size: 24px;
-      line-height: 28px;
-      color: #424242;
+      line-height: 28.44px;
+      color:  #000000;
     }
     footer{
       text-align: center;
