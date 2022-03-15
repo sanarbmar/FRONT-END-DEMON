@@ -1,0 +1,9 @@
+.box{
+    padding: 1rem;
+    border: 5px dashed #DB086F;
+    counter-increment: flex-items;
+    display: flex;
+}
+.box::after{
+    content: counter(flex-items);
+}
