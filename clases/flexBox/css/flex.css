@@ -1,0 +1,32 @@
+.flex{
+    display: flex;
+    background: lightgray;
+}
+.flex > * {
+   /*  border: 1px solid red !important; */
+    /* flex-grow: ; cuanto se agranda
+    flex-shrink: ;cuanto se achicas
+    flex-basis: auto ;tamaño por defecto de un elemento */
+   /*  flex-grow: 1;
+    flex-basis: 100px;
+    padding: 1rem !important; */
+}
+.flex > div{
+    border: 1px solid red;
+    /* flex-grow: 1;
+    flex-basis: 100%; */
+    /* lo que esta haciendo por debajo */
+    flex: 1;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%; */
+}
+.flex > img{
+    inline-size: 400px;
+    flex-shrink: 0;
+}
+/* .flex p {
+
+    border: 1px solid  green !important;
+    flex-basis: 50px;
+} */
