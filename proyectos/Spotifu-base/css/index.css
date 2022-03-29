@@ -5,6 +5,8 @@
 @import './button-icon.css';
 @import './side-bar.css';
 @import './elipsis.css';
+@import './slider.css';
+@import './player-controls.css';
 :root { 
   --primary: #00b050; 
   --white: #ffffff; 
