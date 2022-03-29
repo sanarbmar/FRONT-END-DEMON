@@ -7,6 +7,9 @@
 @import './elipsis.css';
 @import './slider.css';
 @import './player-controls.css';
+@import './player-playback.css';
+@import './player-volumen.css';
+@import './player.css';
 :root { 
   --primary: #00b050; 
   --white: #ffffff; 

@@ -17,17 +17,37 @@
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur dignissimos unde. Animi, magni fugiat. Ad delectus voluptatibus, sapiente omnis suscipit atque rerum sit veniam voluptas quasi fuga iure corporis.</p>
   
   <div class="playerControls">
-    <div class="playerControls-buttons">
+    <div class="playerControls-buttons" aria-label="controles de reproduccion">
       <button class="buttonIcon" aria-label="Anterior" title="Anterior">
         <i class="icon-prev" aria-hidden="true"></i>
       </button>
     
-      <button class="buttonIcon is-primary" aria-label="Reoproducir" title="Reproducir">
+      <button class="buttonIcon is-white" aria-label="Reoproducir" title="Reproducir">
         <i class="icon-Play" aria-hidden="true"></i>
       </button>
       <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
         <i class="icon-next" aria-hidden="true"></i>
       </button>
+    </div>
+    <div class="playerPlayback" >
+      <span class="playerPlayback-progressTime">01:40</span>
+      <div class="playerPlayback-slider">
+        <div class="slider">
+          <div class="slider-progress">
+            <button class="slider-button" aria-label="controlar el progreso de la reproduccion"></button>
+          </div>
+        </div>
+
+      </div>
+      <span class="playerPlayback-progressTime">01:40</span>
+    </div>
+  </div>
+  
+  <div class="playerVolumen">
+    <button class="player-control" aria-label="silenciar" aria-describedby="volumen-icon">
+      <i class="icon-volume-up" id="volumen-icon" role="presentation" aria-label="volumen alto"></i>
+    </button>
+    <div class="playerVolumen-slide">
       <div class="slider">
         <div class="slider-progress">
           <button class="slider-button" aria-label="controlar el progreso de la reproduccion"></button>
@@ -35,7 +55,6 @@
       </div>
     </div>
   </div>
-  
 
 
   <div class="sidebar">

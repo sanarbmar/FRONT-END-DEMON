@@ -1,8 +1,12 @@
 .playerControls{
-    border: 2px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
-   /*  flex-direction: row; */
+    flex-direction: column;
+    gap: .25rem;
 }
-.playerControls-button{
-
+.playerControls-buttons{
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
